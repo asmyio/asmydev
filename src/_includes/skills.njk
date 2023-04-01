@@ -1,0 +1,22 @@
+<section class="section">
+  <h1 class="title">What I do everyday</h1>
+  <h2 class="subtitle">
+    JavaScript, Python, Bash, noSQL, SQL, Dart (Flutter), C/C++
+  </h2>
+  <table class="table is-fullwidth">
+    <thead>
+      <tr>
+        <th>Area of Focus</th>
+        <th>Technologies</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in focus.items %}
+      <tr>
+        <td>{{ item.name }}</td>
+        <td>{{ item.technologies }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
