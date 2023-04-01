@@ -1,0 +1,29 @@
+{
+    "items": [
+      {
+        "name": "Data Analytics",
+        "technologies": "Python, SQL"
+      },
+      {
+        "name": "Data Engineering",
+        "technologies": "JavaScript, Python, SQL, Amazon Web Services (AWS), Google Cloud Platform (GCP)"
+      },
+      {
+        "name": "DevOps",
+        "technologies": "Linux, Docker, Kubernetes, Jenkins, Ansible, Terraform, AWS, GCP"
+      },
+      {
+        "name": "Mobile Development",
+        "technologies": "Dart (Flutter)"
+      },
+      {
+        "name": "Systems Integration",
+        "technologies": "JavaScript, Python, SQL"
+      },
+      {
+        "name": "Web Development",
+        "technologies": "JavaScript, HTML, CSS, React, Node.js, Express, MongoDB"
+      }
+    ]
+  }
+  

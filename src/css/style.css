@@ -1,0 +1,59 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  #close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 767px) {
+    .popup-content {
+      width: 90%;
+      max-width: 350px;
+      padding: 10px;
+    }
+  }
+  
+  .hero-body-tile {
+    align-items: center;
+  }
+  
+  .hero-body-tile-text {
+    flex: 1;
+  }
+  
+  .hero-body-tile-image {
+    margin-left: 1rem;
+  }
+  
+  
