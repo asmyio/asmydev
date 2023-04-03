@@ -5,11 +5,11 @@
         <div class="column is-flex is-flex-wrap">
           <div class="hero-body-tile is-flex">
             <div class="hero-body-tile-image">
-              <img src="./assets/wrench.svg" alt="I" width="90">
+                <svg id="svg-container"></svg>
             </div>
             <div class="hero-body-tile-text">
               <p class="title has-text-centered-mobile">
-                will solve your problems.
+                I will solve your problems.
               </p>
             </div>
           </div>
@@ -29,3 +29,54 @@
     </div>
   </div>
 </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+
+<script>
+  var s = Snap("#svg-container");
+
+  var textI = s.text(s.attr('width')/2, s.attr('height')/2, "I");
+
+  textI.attr({
+    "font-size": 1,
+    "text-anchor": "middle" // center the text horizontally and vertically
+  });
+  
+  var info = s.image("./assets/person.svg", 0, 0, 110, 110);
+  var wrench = s.image("./assets/wrench.svg", 0, 0, 110, 110);
+  var lab = s.image("./assets/lab.svg", 0, 0, 110, 110);
+  var board = s.image("./assets/board.svg", 0, 0, 110, 110);
+  var circuit = s.image("./assets/circuit.svg", 0, 0, 110, 110);
+  var code = s.image("./assets/code.svg", 0, 0, 110, 110);
+  var wireframe = s.image("./assets/wireframe.svg", 0, 0, 110, 110);
+
+  var svgs = [textI, info, wrench, lab, board, circuit, code, wireframe];
+  var currentSvgIndex = 0;
+
+  var bounce = function () {
+    svgs[currentSvgIndex].animate({transform: 't0,0'}, 600, mina.easeinout, function () {
+      svgs[currentSvgIndex].animate({transform: 't0,-10'}, 600, mina.easeinout, bounce);
+    });
+  };
+
+  var changeSvg = function () {
+    currentSvgIndex = (currentSvgIndex + 1) % svgs.length;
+    setTimeout(function () {
+      svgs[currentSvgIndex].animate({opacity: 1}, 600, mina.easeinout, function () {
+        setTimeout(function () {
+          svgs[currentSvgIndex].animate({opacity: 0}, 600, mina.easeinout, function () {
+            changeSvg();
+          });
+        }, 600);
+      });
+    }, 600);
+  };
+
+  svgs.forEach(function (svg) {
+    svg.attr({opacity: 0});
+  });
+  svgs[currentSvgIndex].attr({opacity: 1});
+
+  bounce();
+  changeSvg();
+</script>
