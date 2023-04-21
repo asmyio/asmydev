@@ -47,7 +47,6 @@ firebase deploy
 
 ## Future Plans
 
-- Implement CI/CD via GitHub Action for Firebase Deployment
 - Add interactive slides for my Portfolio
 - Display badges from Credly e.g. ISC2
 

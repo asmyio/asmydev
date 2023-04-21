@@ -15,7 +15,7 @@ jobs:
       - name: Install Node.js and NPM
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Install Eleventy
         run: npm install @11ty/eleventy
