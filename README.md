@@ -8,6 +8,7 @@ my website at [asmy.dev](https://asmy.dev) powered by [11ty](https://11ty.dev), 
   - [Getting Started](#getting-started)
     - [Requirements](#requirements)
     - [Setup](#setup)
+    - [Developing with Docker](#developing-with-docker)
     - [Deploying to Production](#deploying-to-production)
   - [Future Plans](#future-plans)
   - [Author](#author)
@@ -32,6 +33,25 @@ and then
 npm start
 ```
 to start developing. This will serve the site at your local machine to see the changes that you've made in real time.
+
+### Developing with Docker
+
+The steps to eliminating the "Works in my Machine" problem. There's a Dockerfile in this project, you need to build the image
+
+```
+docker build -t asmydev-11ty .
+```
+
+then run it
+
+```
+docker run -p 8080:8080 --name asmydev asmydev-11ty
+```
+
+enjoy. 
+
+For more info: [DevOps w/ Docker](http://devopswithdocker.com)
+
 
 ### Deploying to Production
 
