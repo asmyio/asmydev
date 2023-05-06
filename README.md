@@ -1,6 +1,8 @@
 # asmy.dev
 
-my website at [asmy.dev](https://asmy.dev) powered by [11ty](https://11ty.dev), [bulma](https://bulma.io) and [openemoji](https://openemoji.org). The idea stems from "I just wanna get my personal website up and running quickly because I don't have time for this since I got a full time job" ideology. This is where I keep the source code in case I need to do some editing in the future or to showcase how did I do it.
+[![Firebase Deploy](https://github.com/asmyio/asmydev/actions/workflows/firebase-deploy.yml/badge.svg)](https://github.com/asmyio/asmydev/actions/workflows/firebase-deploy.yml)
+
+my website [asmy.dev](https://asmy.dev) powered by [11ty](https://11ty.dev), [bulma](https://bulma.io) and [openemoji](https://openemoji.org). The idea stems from "I just wanna get my personal website up and running quickly because I don't have time for this since I got a full time job" ideology. This is where I keep the source code in case I need to do some editing in the future or to showcase how did I do it.
 
 ## Table of Contents
 - [asmy.dev](#asmydev)
